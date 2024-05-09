@@ -71,6 +71,7 @@
     <nav class="navbar navbar-expand-lg">
       <a href="#title">
       </a>
+      <img src="be-logo.png"  width="100" height="100" alt="">
       <a class="navbar-brand" href="#">Baitul Ehsan</a>
 
       <button
@@ -115,71 +116,52 @@
 
     <!--***** Title *****-->
 
-    <section class="coloured-section" style="background-image: url('background.jpeg');" id="title">
+    <section class="coloured-section" style="background-image: url('https://scontent.fkul4-2.fna.fbcdn.net/v/t39.30808-6/408725126_746428847518214_3823481055314086564_n.jpg?_nc_cat=105&_nc_cb=99be929b-713f6db7&ccb=1-7&_nc_sid=5f2048&_nc_ohc=I-FUVei5o5QQ7kNvgF5SEeY&_nc_ht=scontent.fkul4-2.fna&oh=00_AfBegXQU6J_EPudZ9OXJql2jL_BUAN7oXM7uf0MoRjXbdQ&oe=66426BD7'), url('https://scontent.fkul4-2.fna.fbcdn.net/v/t39.30808-6/408744422_746428877518211_4328020967035571899_n.jpg?_nc_cat=105&_nc_cb=99be929b-713f6db7&ccb=1-7&_nc_sid=5f2048&_nc_ohc=FatyEIa0hu4Q7kNvgEGlqkz&_nc_ht=scontent.fkul4-2.fna&oh=00_AfD15bCfdDWAiIiYcIe6_f_FLtpfgejBLPKmQvdC3sFcNA&oe=664260BB'); background-repeat: no-repeat,repeat;" id="title">
+
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 ">
             <h1 class="big-heading">
               “We must give more in order to get more. It is the generous giving
               of ourselves that produces the generous harvest.”
             </h1>
             <div>
               <form>
-                <button id="rzp-button1">
-                  <i class="fas fa-donate"></i>&nbsp;&nbsp;Donate here
-                </button>
-                <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-                <script>
-                  var options = {
-                    key: "rzp_test_aIfnpuWEudWnID", // Enter the Key ID generated from the Dashboard
-                    amount: "5000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-                    currency: "INR",
-                    name: "Soumita Biswas",
-                    description: "Please lend a Helping hand",
-                    handler: function (response) {
-                      if (
-                        typeof response.razorpay_payment_id == "undefined" ||
-                        response.razorpay_payment_id < 1
-                      ) {
-                        swal({
-                          title: "Please try again later!",
-                          icon: "error",
-                          button: "Close",
-                        });
-                      } else {
-                        swal({
-                          title: "Thank You!",
-                          icon: "success",
-                          button: "Close",
-                        });
-                      }
-                    },
-                    theme: {
-                      color: "#3399cc",
-                    },
-                  };
-                  var rzp1 = new Razorpay(options);
-                  document.getElementById("rzp-button1").onclick = function (
-                    e
-                  ) {
-                    rzp1.open();
-                    e.preventDefault();
-                  };
-                </script>
+                <button type="submit" class="btn" onclick="openPopup()">DERMA SEKARANG</button>
+                <div class="popup" id="popup">
+                  <img src="maybank-logo.png">
+                  <img src="cimb-logo.png">
+                  <h2>CIMB ISLAMIC : 8600081233</h2>
+                  <h2>(BAITUL EHSAN)</h2>
+                  <h2>MAYBANK : 564409611782</h2>
+                  <h2>(MAAHAD TAHFIZ BAITUL EHSAN)</h2>
+                  <button type="button" onclick="closePopup()">SELESAI</button>
+                </div>   
               </form>
             </div>
           </div>
 
+          <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup(){
+              popup.classList.add("open-popup");
+            }
+            function closePopup(){
+              popup.classList.remove("open-popup");
+            }
+          </script>
+
           <div class="col-lg-6">
             <img
-              class="title-image"
-              src="images/child-color.jpg"
-              alt="child-image"
+              class=""
+              src=""
+            
             />
             <img
               class="title-image1"
-              src="images/child2.jpg"
-              alt="child-image"
+              src=""
+            
             />
           </div>
         </div>
@@ -484,7 +466,7 @@
       <div class="container">
         <div class="sec Aboutus">
           <h2>Helping Hand</h2>
-          <span class="animate-border border-black"></span>
+          <!-- <span class="animate-border border-black"></span> -->
 
           <div class="footer-detail">
             <p>

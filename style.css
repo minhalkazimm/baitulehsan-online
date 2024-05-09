@@ -117,7 +117,9 @@ html {
 
 .big-heading {
     font-size: 2rem;
+    color: #151414;
     line-height: 1.5;
+    text-shadow: 2px whitesmoke;
 }
 
 .title-image {
@@ -133,7 +135,7 @@ html {
     margin: 5% 3% 5% 0;
 }
 
-#rzp-button1 {
+.btn{
     background-color: #CFA100;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -151,10 +153,55 @@ html {
     border-radius: 30px !important;
 }
 
-#rzp-button1:hover {
+.btn:hover {
     background-color: #4b4748;
 }
 
+.popup{
+    width: 600px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.popup img{
+    width: 200px;
+    /* border-radius: 50%; */
+    /* box-shadow: 0 2px 5px; */
+}
+
+.popup h2{
+    font-size: 28px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 #button {
     display: inline-block;
     background-color: #877ba1;
@@ -361,12 +408,13 @@ p {
 
 
 /* CUSTOM SCROLLBAR */
-::-webkit-scrollbar {
+
+/* ::-webkit-scrollbar {
     width: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
-    /* background-image: linear-gradient(to bottom, rgb(70, 130, 180), rgb(255, 110, 127)); */
+    background-image: linear-gradient(to bottom, rgb(70, 130, 180), rgb(255, 110, 127));
     background-color: #ff8e9bbd;
     border-radius: 10px;
     box-shadow: inset 2px 2px 5px rgb(145, 138, 138);
@@ -374,7 +422,8 @@ p {
 
 ::-webkit-scrollbar-track {
     background-color: #c0e1f0;
-}
+} */
+
 
 
 
@@ -492,12 +541,12 @@ button {
     }
 }
 
-.title-image {
-    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+/* .title-image {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ 
     filter: gray;
-    /* IE5+ */
+    /* IE5+ 
     -webkit-filter: grayscale(1);
-    /* Webkit Nightlies & Chrome Canary */
+    /* Webkit Nightlies & Chrome Canary 
     -webkit-transition: all .5s ease-in-out;
     width: 24rem;
     height: 24rem;
@@ -505,29 +554,15 @@ button {
     margin-top: -100px;
     display: block;
     -webkit-transition: -webkit-transform 1s;
-}
+} */
 
 .title-image1 {
-    filter: gray;
-    /* IE5+ */
-    -webkit-filter: grayscale(1);
-    /* Webkit Nightlies & Chrome Canary */
-    -webkit-transition: all .5s ease-in-out;
     width: 24rem;
     height: 24rem;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     margin-top: 50px;
     margin-left: 280px;
     display: block;
-    -webkit-transition: -webkit-transform 1s;
-}
-
-.title-image1:hover,
-.title-image:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
-    -webkit-transform: scale(1.01);
-    -webkit-transform: rotate(5deg)translateZ(0);
 }
 
 
