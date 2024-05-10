@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+h1{
+    text-shadow: 90px 90px 90px white;
+}
 h1, h2, h3 {
     font-weight: bolder;
 }
@@ -96,10 +99,6 @@ html {
 .navbarlogo:hover {
     cursor: pointer;
 }
-
-
-
-
 
 
 
@@ -376,6 +375,56 @@ p {
 }
 
 
+/*******  ACTIVITY ********/
+#media {
+    padding: 7% 6%;
+    z-index: 1;
+    position: relative;
+    background-color: whitesmoke;
+    /* margin: 20px; */
+}
+
+/* div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+  } */
+  .gallery{
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    margin: 5px;
+    width: 400px;
+    justify-items: center;
+}
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+.gallery:hover{
+    border: 1px solid hsl(0, 0%, 20%);
+}
+.gallery img{
+    width: 400px;
+    height: 250px;
+  
+    
+}
 
 
 
@@ -435,7 +484,7 @@ p {
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4682B4, #ff6e7f);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4682B4, #ff6e7f);
+    background: linear-gradient(to right, #4682B4, #ff6e7f); 
     color: #fff;
     padding: 6% 10% 8%;
     justify-content: center;
@@ -586,7 +635,7 @@ button {
 
 .contact h2 {
     display: block;
-    width: 250px;
+    width: 350px;
     justify-content: center;
     margin: 0px auto;
     font-size: 45px;
