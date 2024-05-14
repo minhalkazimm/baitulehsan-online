@@ -183,9 +183,29 @@
           <img src="background.jpeg" width="480px" height="360px" alt="">
         </div>
         <div class="feature-text">
-          <h4>Baitul ehsan adalah sebuah pusat tahfiz yang terletak di Taman Maluri, Kuala Lumpur. Ditubuhkan secara rasmi pada Mac 2012, oleh  Puan Ummi Azizah Saad dan suaminya Encik Omar Ab. Ghani. </h4>
+          <h4>Baitul ehsan merupakan sebuah rumah perlindungan bagi mereka yang diuji dengan ujian kehidupan. Ditubuhkan secara rasmi pada Mac 2012, oleh  Puan Ummi Azizah Saad dan suaminya Encik Omar Ab. Ghani. Terdapat 2 cawangan Baitul Ehsan iaitu di Batu Caves bagi menempatkan penghuni lelaki serta
+            di Maluri yang menempatkan penghuni wanita. </h4>
           <span></span>
-          <h4>Sehingga sekarang terdapat 66 orang kanak-kanak ,41 lelaki dan 25 perempuan, dari umur 6 tahun hingga 17 tahun. Anak-anak ini dididik dan dipantau oleh guru-guru yang menerima pentauliahan khusus.</h4>
+        </div>
+      </div>
+    </section>
+
+    <!--comment-->
+
+    <section id="video" class="features">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oe8huK4fz9s?si=VINxHQQ896kzyAT_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="feature-title">Penubuhan Baitul Ehsan </h3>
+          <p class="feature-text">
+            Seramai 40 wanita serta 46 lelaki di Baitul Ehsan. Rata-rata mereka bukan sahaja anak yatim, malah fakir miskin, mualaf, ibu tunggal, B40, anak tidak sah taraf dan lain2 lagi. Selama 12 tahun beroperasi, pemilik
+            Baitul Ehsan tidak pernah lokek dalam mendidik penghuni dengan ilmu yang bermanfaat seperti ilmu Al-Quran, ilmu akademik serta mengasah skill kemahiran supaya mereka dapat bekerja dimasa akan datang. Ikuti kisah
+            mereka ini.
+          </p>
         </div>
       </div>
     </section>
@@ -410,28 +430,21 @@
       <div class="contact">
         <h2>Hubungi Kami</h2>
         <p>HAVE SOME QUESTIONS?</p>
-
+    
         <form class="form" id="myForm" enctype="multipart/form-data">
           <div class="contbutton">
             <label for="First">
-              <input type="text" placeholder="First Name" id="First" /> </label
-            ><br />
+              <input type="text" placeholder="First Name" id="First" name="first" required /> 
+            </label><br />
             <label for="Last">
-              <input type="text" placeholder="Last Name" /> </label
-            ><br />
+              <input type="text" placeholder="Last Name" id="Last" name="last" required /> 
+            </label><br />
             <label for="email">
-              <input type="email" placeholder="What's your mail?" /> </label
-            ><br />
+              <input type="email" placeholder="What's your mail?" id="email" name="email" required /> 
+            </label><br />
             <label for="problem">
-              <textarea
-              rows="5"
-              cols="39"
-                class="question"
-                placeholder="Your questions..."
-                id="problem"
-              /></textarea> </label
-            ><br />
-
+              <textarea rows="5" cols="39" class="question" placeholder="Your questions..." id="problem" name="problem" required></textarea> 
+            </label><br />
             <div class="subbtn">
               <button type="submit">Send Message</button>
             </div>
@@ -439,8 +452,8 @@
         </form>
         <div class="avatar"></div>
       </div>
-      
     </section>
+    
     
 
     <!--************* Footer ********** -->
