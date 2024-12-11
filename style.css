@@ -21,19 +21,13 @@ html {
     overflow-x: hidden;
 }
 
-
-
-
-
-
-
 /****** NAV-BAR ******/
 
 .navbar-brand {
     font-size: 2.5rem;
     font-weight: bold;
     font-family: "Ubuntu";
-    margin-left: 6rem;
+    margin-left: 1rem;
     color: rgb(255, 255, 255);
 }
 
@@ -241,17 +235,12 @@ html {
     visibility: visible;
 }
 
-
-
-
-
-
 /****** FEATURES ******/
 #features {
     padding: 7% 6%;
     z-index: 1;
     position: relative;
-    background-color: #0D375E;
+    background-color: #fffed5;
 }
 
 .secf {
@@ -274,32 +263,6 @@ html {
     text-decoration: underline;
 }
 
-.abtus {
-display: flex;
-}
-
-.feature-image {
-    padding: 10px;
-    width: 600px;
- }
-  
-  .feature-text {
-    /* Add styles for text here */
-    top: 20%;
-    float: right;
-    color: white;
-    width: 50%;  padding: 20px;  }
-
-
-.secf-tk h2{
-        display: block;
-        width: 350px;
-        justify-content: center;
-        margin: 0px auto;
-        font-size: 45px;
-        text-align: center;
-        color: rgb(255, 255, 255);
-}
 .sec-feature {
     border-left: 1px solid green;
     height: 40px;
@@ -508,9 +471,9 @@ p {
 #faq {
     background: #ff6e7f;
     /* fallback for old browsers */
-    background: #fffed5;
+    background: -webkit-linear-gradient(to right, #4682B4, #ff6e7f);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: #fffed5; 
+    background: linear-gradient(to right, #4682B4, #ff6e7f); 
     color: #fff;
     padding: 6% 10% 8%;
     justify-content: center;
@@ -530,8 +493,8 @@ p {
     margin: auto;
     padding: 20px 50px;
     margin-top: 110px;
-    background: #0D375E;
-    
+    background: #e91e63;
+    box-shadow: inset 5px 5px 10px #5d0c28, inset -5px -5px 10px #ff309e;
     border-radius: 30px;
     justify-content: space-between;
 }
@@ -553,7 +516,7 @@ p {
     color: black;
     background-color: white;
     background: #ffffff;
-   
+    box-shadow: inset 5px 5px 10px #2b6ca1, inset -5px -5px 10px #ff309e;
     border-radius: 30px;
     padding: 30px 34px;
     overflow: hidden;
@@ -646,27 +609,20 @@ button {
 
 
 /******** Contact Us *******/
+/* Contact Section */
 .contact {
-    display: block;
-    color: white;
-    padding: 0 5%;
-    background-color: #ffd1e1;
-    background: #ff6e7f;
-    /* fallback for old browsers */
-    background: #0D375E;
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: #0D375E;
-    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background: linear-gradient(to right, #ff6e7f, #E6E6FA);
+    padding: 50px 5%;
+    text-align: center;
 }
 
 .contact h2 {
-    display: block;
-    width: 350px;
-    justify-content: center;
-    margin: 0px auto;
-    font-size: 45px;
-    text-align: center;
-    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .contact h2:hover {
@@ -675,104 +631,83 @@ button {
 }
 
 .contact p {
-    font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contbutton label {
     display: block;
-    text-align: right;
-    padding-right: 8rem;
-    margin-top: 5rem;
-    color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 800px)  {
-
-
-.avatar {
-    width: 500px;
-    height: 500px;
-    margin-top: -22rem;
-    margin-left: 100px;
-    background: url('images/contact_illustration.png');
-    background-size: contain;
-    transition: all .3s linear;
-    transform-origin: 50%;
-}
-}
-.contbutton {
-    display: block;
-    text-align: right;
-}
-
-.contbutton input{
-    padding-right: 1rem;
-    margin-top: 0.5rem;
-    outline: none;
-    margin-right: 13rem;
-    border-radius: 36px;
-    padding: 8px 30px;
-    text-decoration: none;
-    background-color: rgb(238, 238, 238);
+.contbutton input, .contbutton textarea {
+    width: calc(100% - 60px);
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 30px;
     border: 1px solid rgb(61, 61, 61);
-}
-.question{
-  padding-right: 1rem;
-  margin-top: 0.5rem;
-  outline: none;
-  margin-right: 3.3rem;
-  border-radius: 36px;
-  padding: 8px 30px;
-  text-decoration: none;
-  background-color: rgb(238, 238, 238);
-  border: 1px solid rgb(61, 61, 61);
+    outline: none;
+    background-color: rgb(238, 238, 238);
 }
 
 .subbtn {
-    display: block;
     text-align: right;
     padding-top: 10px;
 }
 
 .subbtn button {
-    display: inline-block;
     width: 265px;
     height: 45px;
     border: none;
-    text-align: center;
-    margin-right: 13rem;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    background: #CFA100;
-   
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #e91e63;
+    box-shadow: inset 5px 5px 10px #5d0c28, inset -5px -5px 10px #ff309e;
     border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-.subbtn :hover {
-    background-color: #ccec15;
-    font-size: 1.6rem;
-    color: white;
+.subbtn button:hover {
+    background: #d60047;
 }
 
-/* .mapbox {
-    position: relative;
-    height: 250px;
-    width: 100%;
-    border-radius: 16px;
-    margin-bottom: 30px;
-    border: 1px solid var(--jet);
-    overflow: hidden;
-  }
-  
-  .mapbox figure { height: 100%; }
-  
-  .mapbox iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    filter: grayscale(1) invert(1);
-  } */
+.avatar {
+    width: 500px;
+    height: 500px;
+    margin-top: -22rem;
+    background: url('images/contact_illustration.png') no-repeat center center;
+    background-size: contain;
+    transition: all 0.3s linear;
+    transform-origin: 50%;
+}
 
-
-
+@media only screen and (max-width: 800px) {
+    .contact p {
+        text-align: center;
+    }
+    .contbutton input, .contbutton textarea {
+        width: calc(100% - 30px);
+        margin-right: 0;
+    }
+    .subbtn button {
+        width: 100%;
+        margin-right: 0;
+    }
+    .avatar {
+        display: none;
+    }
+}
 
 /*********** Footer **********/
 footer {
@@ -1251,3 +1186,57 @@ p {
     }
 
 }
+
+/* VIDEO SECTION */
+#video {
+    padding: 5% 6%;
+    background-color: #f9f9f9;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.feature-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 992px) {
+    .video-container {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feature-title {
+        font-size: 1.5rem;
+    }
+
+    .feature-text {
+        font-size: 1rem;
+    }
+}
+
